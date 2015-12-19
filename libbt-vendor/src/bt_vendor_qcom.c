@@ -842,8 +842,8 @@ static int op(bt_vendor_opcode_t opcode, void *param)
                                        /* Since the BD address is configured in boot time We should not be here */
                                        ALOGI("Failed to read BD address. Use the one from bluedroid stack/ftm");
                                     }
-                                    if(rome_soc_init(fd, (char*)vnd_local_bd_addr)<0) {
 #endif
+                                    if(rome_soc_init(fd, (char*)vnd_local_bd_addr)<0) {
                                         retval = -1;
                                     } else {
                                         ALOGV("rome_soc_init is completed");
